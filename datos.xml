@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-7" ?>
+<productos> 
+    <producto>
+        <tipoAlcohol>Ron</tipoAlcohol> 
+	    <bebida>Ron Barcelo</bebida> 	
+        <precio>19</precio> 
+	    <refresco>Cocacola</refresco>
+        <hielos>Si</hielos>
+    </producto>
+    <producto>
+        <tipoAlcohol>Ron</tipoAlcohol> 
+	    <bebida>Legendario</bebida> 	
+        <precio>18</precio> 
+	    <refresco>Cocacola</refresco>
+        <hielos>No</hielos>
+    </producto>
+    <producto>
+        <tipoAlcohol>Vodka</tipoAlcohol> 
+	    <bebida>Ciroc</bebida> 	
+        <precio>25</precio> 
+	    <refresco>Redbull</refresco>
+        <hielos>Si</hielos>
+    </producto>
+    <producto>
+        <tipoAlcohol>Vodka</tipoAlcohol> 
+	    <bebida>Absolut Vodka</bebida> 	
+        <precio>18</precio> 
+	    <refresco>Cocacola</refresco>
+        <hielos>Si</hielos>
+    </producto>
+    <producto>
+        <tipoAlcohol>Whisky</tipoAlcohol> 
+	    <bebida>Red label</bebida> 	
+        <precio>19</precio> 
+	    <refresco>Redbull</refresco>
+        <hielos>No</hielos>
+    </producto>
+    <producto>
+        <tipoAlcohol>Whisky</tipoAlcohol> 
+	    <bebida>Black label</bebida> 	
+        <precio>25</precio> 
+	    <refresco>Redbull</refresco>
+        <hielos>Si</hielos>
+    </producto>
+    <producto>
+        <tipoAlcohol>Ginebra</tipoAlcohol> 
+	    <bebida>Exotica</bebida> 	
+        <precio>20</precio> 
+	    <refresco>Fanta de limon</refresco>
+        <hielos>Si</hielos>
+    </producto>
+</productos>

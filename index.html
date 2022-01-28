@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<!-- Enlaces a bootstrap-->
+	<link rel="stylesheet" href="bootstrap.min.css" />
+
+	<style type="text/css">
+		body {
+			margin-left: 10px;
+		}
+
+		/*    
+    	form {
+            display: none;
+        }
+	*/
+    .navbar-default {
+    background-color: #d6b3ff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+		#formularios {
+			margin-top: 60px;
+		}
+
+		.navbar-default .navbar-brand {
+    color: black;
+}
+	</style>
+	<title>UPOLOTE</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">UPOLOTE</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmAltaProducto');">Alta Producto</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmAltaPersona');">Alta Persona</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('frmAltaPedido');">Alta Pedido</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('listadoPr');">Listado de Productos</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('listadoPe');">Listado de Personas</a>
+				</li>
+				<li>
+					<a href="#"  onclick="gestionFormularios('listadoPedidos');">Listado de Pedidos Por Fecha</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="container" id="formularios">
+		<div class="row">
+			<form class="form-horizontal" name="frmAltaProducto" id="frmAltaProducto">
+				<fieldset>
+					<!-- Form Name -->
+					<legend>Alta de Producto</legend>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtTipoAlcohol">Tipo De Alcohol</label>
+						<div class="col-xs-4">
+							<input id="txtTipoAlcohol" name="txtTipoAlcohol" placeholder="Tipo Alcohol"
+								class="form-control input-md" type="text">
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtNombre">Nombre</label>
+						<div class="col-xs-4">
+							<input id="txtNombre" name="txtNombre" placeholder="Nombre" class="form-control input-md"
+								type="text">
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtPrecio">Precio
+							</label>
+						<div class="col-xs-4">
+							<input id="txtPrecio" name="txtPrecio" placeholder="Precio"
+								class="form-control input-md" type="text">
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtRefresco">Refresco
+							</label>
+						<div class="col-xs-4">
+							<input id="txtRefresco" name="txtRefresco" placeholder="Refresco" class="form-control input-md"
+								type="text">
+						</div>
+					</div>
+
+					<!-- Multiple Radios -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="rbtHielos">Hielos</label>
+						<div class="col-xs-4">
+							<div class="radio">
+								<input name="rbtHielos" id="rbtHielos-S" value="Si" checked="checked"
+									type="radio">
+								<label for="rbtHielos-S">Si</label>
+							</div>
+							<div class="radio">
+								<input name="rbtHielos" id="rbtHielos-N" value="No" type="radio">
+								<label for="rbtHielos-N">No </label>
+							</div>
+						</div>
+					</div>
+									
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarAltaProducto"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarAltaProducto" name="btnAceptarAltaProducto"
+								class="btn btn-primary" value="Aceptar" />
+						</div>
+					</div>
+				</fieldset>
+			</form>
+			<form class="form-horizontal" name="frmAltaPersona" id="frmAltaPersona">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Alta Persona</legend>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtNombre">Nombre</label>
+						<div class="col-xs-4">
+							<input id="txtNombre" name="txtNombre" placeholder="Nombre"
+								class="form-control input-md" type="text">
+
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtApellido">Apellido</label>
+						<div class="col-xs-4">
+							<input id="txtApellido" name="txtApellido" placeholder="Apellido"
+								class="form-control input-md" type="text">
+
+						</div>
+					</div>	
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtTelefono">Telefono</label>
+						<div class="col-xs-4">
+							<input id="txtTelefono" name="txtTelefono" placeholder="Telefono"
+								class="form-control input-md" type="text">
+
+						</div>
+					</div>
+
+                    <!-- Multiple Radios -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="rbtTipoPersona">Tipo Persona</label>
+						<div class="col-xs-4">
+							<div class="radio">
+								<input name="rbtTipoPersona" id="rbtTipoPersona-C" value="C"
+									type="radio">
+								<label for="rbtTipoPersona-C">Cliente</label>
+							</div>
+							<div class="radio">
+								<input name="rbtTipoPersona" id="rbtTipoPersona-R" value="R" type="radio">
+								<label for="rbtTipoPersona-R">Repartidor</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div id="botones" class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdCliente">ID Cliente
+							</label>
+						<div class="col-xs-4">
+							<input id="txtIdCliente" name="txtIdCliente" placeholder="ID Cliente" class="form-control input-md"
+								type="text">
+						</div>
+					</div>
+					
+					<!-- Text input-->
+					<div id="botones1" class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdRepartidor">ID Repartidor
+							</label>
+						<div class="col-xs-4">
+							<input id="txtIdRepartidor" name="txtIdRepartidor" placeholder="Repartidor" class="form-control input-md"
+								type="text">
+						</div>
+					</div>						
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarAltaPersona"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarAltaPersona" name="btnAceptarAltaPersona" class="btn btn-primary" value="Aceptar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<form class="form-horizontal" name="frmAltaPedido" id="frmAltaPedido">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Alta Pedido</legend>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtNombreProducto">Nombre Producto</label>
+						<div class="col-xs-4">
+							<input id="txtNombreProducto" name="txtNombreProducto" placeholder="NombreProducto"
+								class="form-control input-md" type="text">
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdRepartidor">IdRepartidor</label>
+						<div class="col-xs-4">
+							<input id="txtIdRepartidor" name="txtIdRepartidor"
+								placeholder="IdRepartidor" class="form-control input-md" type="text">
+
+						</div>
+					</div>
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdCliente">IdCliente</label>
+						<div class="col-xs-4">
+							<input id="txtIdCliente" name="txtIdCliente"
+								placeholder="IdCliente" class="form-control input-md" type="text">
+
+						</div>
+					</div>
+
+					<!-- Text input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtIdPedido">IdPedido</label>
+						<div class="col-xs-4">
+							<input id="txtIdPedido" name="txtIdPedido"
+								placeholder="IdCliente" class="form-control input-md" type="text">
+
+						</div>
+					</div>					
+					
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtFechaPedido">Fecha de Pedido</label>
+						<div class="col-xs-4">
+							<input id="txtFechaPedido" name="txtFechaPedido" placeholder="Fecha Pedido"
+								class="form-control input-md" type="date">
+
+						</div>
+					</div>
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarPedido"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarPedido" name="btnAceptarPedido"
+								class="btn btn-primary" value="Aceptar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+
+			<div id="listados"></div>
+
+			<form class="form-horizontal" name="frmListadoPedidos" id="frmListadoPedidos">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Listado De Pedidos Por Fecha</legend>
+
+					<!-- Date input-->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="txtFechaPedido">Fecha del Pedido</label>
+						<div class="col-xs-4">
+							<input id="txtFechaPedido" name="txtFechaPedido" placeholder="Fecha Pedido"
+								class="form-control input-md" type="date">
+
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-xs-4 control-label" for="btnAceptarListadoPedido"></label>
+						<div class="col-xs-4">
+							<input type="button" id="btnAceptarListadoPedido" name="btnAceptarListadoPedido" class="btn btn-primary" value="Aceptar" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="objetos.js"></script>
+	<script type="text/javascript" src="codigo.js"></script>
+</body>
+
+</html>
